@@ -37,6 +37,7 @@ public class CalculadoraRest {
         //Almacena en un entero el valor de cada posición del ARRAY en el Json utilizando JSON Path
 		int numero1 = readContext.read("$.request.numeros[0]");
 		int numero2 = readContext.read("$.request.numeros[1]");
+        //Operación a realizar que se almacena en el la respuesta
         Response response = 
                 business.suma(numero1, numero2);
         //Se retorna la respuesta
@@ -50,6 +51,7 @@ public class CalculadoraRest {
         //Almacena en un entero el valor de cada posición del ARRAY en el Json utilizando JSON Path
 		int numero1 = readContext.read("$.request.numeros[0]");
 		int numero2 = readContext.read("$.request.numeros[1]");
+        //Operación a realizar que se almacena en el la respuesta
         Response response = 
                 business.multiplacion(numero1, numero2);
         //Se retorna la respuesta
@@ -63,6 +65,7 @@ public class CalculadoraRest {
         //Almacena en un entero el valor de cada posición del ARRAY en el Json utilizando JSON Path
 		int numero1 = readContext.read("$.request.numeros[0]");
 		int numero2 = readContext.read("$.request.numeros[1]");
+        //Operación a realizar que se almacena en el la respuesta
         Response response = 
                 business.resta(numero1, numero2);
         //Se retorna la respuesta
@@ -76,6 +79,7 @@ public class CalculadoraRest {
         //Almacena en un entero el valor de cada posición del ARRAY en el Json utilizando JSON Path
 		int numero1 = readContext.read("$.request.numeros[0]");
 		int numero2 = readContext.read("$.request.numeros[1]");
+        //Operación a realizar que se almacena en el la respuesta
         Response response = 
                 business.division(numero1, numero2);
         //Se retorna la respuesta
